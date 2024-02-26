@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_device>
+  <exe>$TOOLKIT_DIR$\config\flashloader\ASR\FlashASR6601.out</exe>
+  <page>4</page>
+  <block>32 0x1000</block>
+  <flash_base>0x08000000</flash_base>
+  <macro>$TOOLKIT_DIR$\config\flashloader\ASR\ASR6601CB.mac</macro>
+  <online>1</online>
+  <aggregate>1</aggregate>
+</flash_device>

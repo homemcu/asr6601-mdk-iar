@@ -1,0 +1,11 @@
+// Called by debugger before loading flash loader in RAM.
+execUserFlashInit()
+{
+  // This is already implemented in I-Jet/CMSISDAP/J-Link support.
+  if(!(__driverType("ijet") || __driverType("cmsisdap") || __driverType("jlink")))
+  {
+    // Stop watchdogs when CPU is halted
+    disable_debug_mode_wdts();
+  }
+}
+
